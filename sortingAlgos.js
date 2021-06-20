@@ -16,7 +16,7 @@ insertionSort([6,5,2,8,3,1,7,9]);
 function bubbleSort(arr){
   for(let i=0;i<arr.length;i++){
     let isSwapped = false;
-    for(let j=0;j<arr.length-1;j++){
+    for(let j=0;j<arr.length-i;j++){
       if(arr[j] > arr[j+1]){
         [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
         isSwapped = true;
